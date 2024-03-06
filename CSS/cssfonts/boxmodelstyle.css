@@ -1,0 +1,31 @@
+#Backround
+{
+    background-color: rgba(0, 100, 0, 0.2);
+}
+
+#one
+{
+    margin: 40px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(0, 255, 0);
+}
+#two
+{
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+    background-color: blue;
+}
+#three
+{
+    margin: 30px;
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+    background-color: yellow;
+    border-color: brown;
+    border-style: solid;
+
+}
