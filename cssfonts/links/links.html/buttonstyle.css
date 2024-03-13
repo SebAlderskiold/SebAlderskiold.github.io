@@ -1,0 +1,30 @@
+#background
+{
+    background-color: rgb(45, 5, 109);
+}
+.button
+ {
+    margin: 20px;
+    width: 400px;
+    height: 130px;
+    border-left: 20px;
+    border-left-color: yellow;
+    border-radius: 45px;
+    background-color: turquoise;
+    border-color: white;
+    border-style: solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: -5px 5px 0 rgb(9, 255, 0);
+ }
+
+.button:hover
+{
+    background-color: gray;
+}
+
+h1
+{
+    color: yellow;
+}

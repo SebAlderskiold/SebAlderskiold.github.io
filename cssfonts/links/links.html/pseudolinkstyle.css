@@ -1,0 +1,53 @@
+#background
+{
+    background-color: green;
+}
+#Default
+{
+
+   
+    width: 200px;
+    height: 130px;
+    border-radius: 45px;
+    background-color: turquoise;
+    border-color: white;
+    border-style: solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#Hover
+{
+    
+    width: 200px;
+    height: 130px;
+    border-radius: 45px;
+    background-color: turquoise;
+    border-color: white;
+    border-style: solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#Focus
+{
+    
+    width: 200px;
+    height: 130px;
+    border-radius: 45px;
+    background-color: turquoise;
+    border-color: white;
+    border-style: solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#Hover:hover
+{
+    background-color: yellow;
+}
+#Focus:focus
+{
+    border-color: yellow;
+    
+}
