@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+    <script>
+
+        // Skapa arrayen cities med 6 element
+        var cities = ["Dubai", "Paris", "Mumbai", "Dallas", "Houston", "Madrid"];
+
+        // Lägg till 3 element med push och prompt
+        for (var i = 0; i < 1; i++) {
+            var city = prompt("Ange en stad");
+            cities.push(city);
+        }
+
+        // Utskriftsfunktion med forEach
+        function printCities(value, index) {
+            document.write("Index: " + index + ", Value: " + value + "<br>");
+        }
+
+        // Använd forEach för att skriva ut alla element
+        document.write("<h2>Alla element i arrayn:</h2>");
+        cities.forEach(printCities);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Fakultet</h1>
+<script>
+
+function factorial(x) {
+            var f = 1;
+
+            for (; x > 1; f *= x, x--);
+
+            return f;
+        }
+
+        function inputfactorial() {
+            try {
+                var n = Number(prompt("Enter a postive integer", ""));
+
+                var result = factorial(n);
+
+                document.write("Factorial for " + n + " is " + result);
+
+            } catch (ex) {
+        
+                console.error("An error occured", ex);
+            }
+        }
+
+        inputfactorial();
+</script>
+
+</body>
+</html>

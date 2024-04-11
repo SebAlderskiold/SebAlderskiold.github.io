@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p>
+    <input type ="radio"  id = "green" name = "radio" onclick = "vilkenknapp()"> Grön
+    <input type ="radio"  id = "purple" name = "radio" onclick = "vilkenknapp()"> Lila
+    <input type ="radio"  id = "yellow" name = "radio" onclick = "vilkenknapp()"> Gul
+    <input type ="radio"  id = "red" name = "radio" onclick = "vilkenknapp()"> Röd
+    <input type ="radio"  id = "blue" name = "radio" onclick = "vilkenknapp()"> Blå
+    </p>
+
+    <script>
+
+        function vilkenknapp()
+        {
+            if (document.getElementById("green").checked)
+            {
+                document.body.style.backgroundColor = "green"
+            }
+            if (document.getElementById("purple").checked)
+            {
+                document.body.style.backgroundColor = "purple"
+            }
+            if (document.getElementById("yellow").checked)
+            {
+                document.body.style.backgroundColor = "yellow"
+            }
+            if (document.getElementById("red").checked)
+            {
+                document.body.style.backgroundColor = "red"
+            }
+            if (document.getElementById("blue").cheked)
+            {
+                document.body.style.backgroundColor = "blue"
+            }
+        }
+
+    </script>
+
+</body>
+</html>

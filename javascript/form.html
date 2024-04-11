@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.textbox {
+    width: 200px;
+    margin-right: 10px;
+    padding: 0px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+    </style>
+
+    <script>
+
+        
+
+        function Japan()
+        {
+            alert("Hodwy Hodwy");
+        }
+        function China()
+        {
+            alert("goodmorning");
+        }
+        function India()
+        {
+            alert("hejjo");
+        }
+        function skrivut()
+        {
+            var inputText = document.getElementById("input");
+            alert(inputText.value);
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <p>
+
+    <input type ="text" id = "input" class = "textbox"><br><br>
+
+    <input type = "button" value = "skrivut" onclick="skrivut()"><br><br><br>
+
+    <input type = "button" value = "Japan" onclick="Japan()">
+    
+    <input type = "button" value = "China" onclick="China()">
+
+    <input type = "button" value = "India" onclick="India()">
+    <br><br>
+
+    <label for="name">Name:</label> <input type="text" id="name" class="textbox" placeholder=""><br><br>
+    <label for="password">Password:</label> <input type="password" id="password" class="textbox" placeholder="">
+
+    </p>
+</body>
+</html>

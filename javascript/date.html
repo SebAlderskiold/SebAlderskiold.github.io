@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var gammaltdatum = new Date(Date.parse("Aug 30, 2014"));
+        var nyttdatum = new Date();
+        var nyttår = new Date (Date.parse("Jan 10, 2014"))
+
+        var tidsskillnad = nyttår.getTime() - nyttdatum.getTime();
+        var tidnyttår = ((tidsskillnad)/(100*60*60*24)).toString();
+
+        document.write(
+        "Gammalt datum är " + gammaltdatum + "<br>" +
+        "Nytt datum är " + nyttdatum + "<br>" +
+        "Tid till nytt år är " + tidnyttår +"Dagar"
+        );
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

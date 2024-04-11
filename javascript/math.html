@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematiczzzz</title>
+    <script>
+
+        var siffra = prompt("Ange en siffra");
+
+        var tal = Number.parseInt(siffra, 10);
+
+        var log = Math.log(tal).toFixed(2);
+
+        var squareroot = Math.sqrt(tal).toFixed(2);
+
+        var pi = Math.PI.toFixed(2);
+
+        var pwr = Math.pow(tal, 2).toFixed(2);
+
+        var sin = Math.sin(tal).toFixed(2);
+        
+        var random = (Math.random() * (15 - 5) + 5).toFixed(2);
+
+        document.write("Siffran är " + siffra + "<br>" + "Log10 är " + log + "<br>" + "Roten är " + squareroot + "<br>" + "Pi är " + pi + "<br>" + "Upphöjt till 2 är " + pwr + "<br>" + "Sinus är " + sin + "<br>" + "Random mellan 5 och 15 är " + random);
+    </script>
+</head>
+<body>
+</body>
+</html>
