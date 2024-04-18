@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demoprovstyle.css">
+</head>
+<body>
+    <h1>Formula 1</h1>
+    <table>
+        <tr>
+            <th>POS</th>
+            <th>DRIVER</th>
+            <th>NAT</th>
+            <th>CAR</th>
+            <th>PTS</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>VER</td>
+            <td>NED</td>
+            <td>REDBULL</td>
+            <td>549</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>PER</td>
+            <td>MEX</td>
+            <td>REDBULL</td>
+            <td>273</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>HAM</td>
+            <td>GBR</td>
+            <td>MERCEDES</td>
+            <td>232</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>SAI</td>
+            <td>ESP</td>
+            <td>FERARRI</td>
+            <td>200</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>ALO</td>
+            <td>ESP</td>
+            <td>ASTON MARTIN</td>
+            <td>200</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>NOR</td>
+            <td>GBR</td>
+            <td>MCLAREN</td>
+            <td>195</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Total Drivers: 6</td>            
+            <td>Total: 1649</td>
+        </tr>
+    </table>
+
+    <div id = "formulär">
+
+        <form>
+            <fieldset class = "rubrik">
+                <legend>Name Of Driver</legend>
+                First Name: <input type = "text"><br><br>
+                Last Name:  <input type = "text">
+                
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class = "rubrik">
+                <legend>Car</legend>
+
+                <input type="radio" id="redbull" name="car" value="redbull">
+                <label for="redbull">Redbull</label><br>
+                <input type="radio" id="mercedes" name="car" value="mercedes">
+                <label for="mercedes">Mercedes</label><br>
+                <input type="radio" id="astonmartin" name="car" value="astonmartin">
+                <label for="astonmartin">Aston Martin</label><br>
+                <input type="radio" id="ferrari" name="car" value="ferrari">
+                <label for="ferrari">Ferrari</label><br>
+                <input type="radio" id="mclaren" name="car" value="mclaren">
+                <label for="mclaren">McLaren</label><br>
+
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset class = "rubrik">
+                <legend>Nationality</legend>
+                <select id="nationality" name="nationality">
+                    <option value="NED">Netherlands (NED)</option>
+                    <option value="GBR">United Kingdom (GBR)</option>
+                    <option value="MEX">Mexico (MEX)</option>
+                    <option value="ESP">Spain (ESP)</option>
+                  </select>
+            </fieldset>
+        </form>
+
+        <input type="button" value="Send" id = "center">
+    </div>
+
+</body>
+</html>

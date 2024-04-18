@@ -1,0 +1,48 @@
+body
+{
+    background-color: greenyellow;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: solid 2px black;
+    width:300px; 
+    float: left;
+    margin: 10px;
+}
+td, th 
+{
+    border: 2px solid black;
+    padding: 5px;
+}
+#formulär
+{
+    margin-right: 1200px;
+    float: right;
+    width:300px ;
+}
+form
+{
+    border-color: black;
+    border-collapse: collapse;
+}
+fieldset.rubrik
+{
+    border: 2px solid black;
+}
+
+legend
+{
+    background-color: aqua;
+}
+
+#center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 20px;
+    border: solid 2px black;
+}

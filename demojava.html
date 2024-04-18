@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkylator</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+input[type="number"] {
+  width: 100px;
+  margin: 5px;
+}
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Kalkylator</h1>
+  <input type="number" id="num1" placeholder="Första talet">
+  <input type="number" id="num2" placeholder="Andra talet">
+  <br>
+  <button onclick="calculate('+')">+</button>
+  <button onclick="calculate('-')">-</button>
+  <button onclick="calculate('*')">*</button>
+  <button onclick="calculate('/')">/</button>
+  <p id="result"></p>
+</div>
+
+<script>
+function calculate(operator) {
+  const num1 = parseFloat(document.getElementById('num1').value);
+  const num2 = parseFloat(document.getElementById('num2').value);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById('result').textContent = "NaN";
+    return;
+  }
+
+  let result;
+
+  switch (operator) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      if (num2 === 0) {
+        document.getElementById('result').textContent = "Division med 0 är inte tillåtet";
+        return;
+      }
+      result = num1 / num2;
+      break;
+  }
+
+  document.getElementById('result').textContent = result;
+}
+</script>
+</body>
+</html>
